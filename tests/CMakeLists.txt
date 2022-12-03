@@ -23,7 +23,8 @@ set (EXT_HEADERS
         )
 
 set (EXT_SOURCES
-        ../src/Header.c
+        ../src/sorting.cpp
+        ../src/roots.cpp
         )
 
 add_definitions(-DINPUTDIR="${PROJECT_SOURCE_DIR}/input")
