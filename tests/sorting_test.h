@@ -7,9 +7,9 @@
 #include <errno.h>
 #include <unistd.h>
 
-extern "C" {
+
 #include "Header.h"
-}
+
 
 //Проверка сортировки Шелла
 TEST(TestCaseSorting, TestShellsort) {

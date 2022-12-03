@@ -10,9 +10,9 @@
 
 #include <fcntl.h>
 
-extern "C" {
+
 #include "Header.h"
-}
+
 
 
 #define MAXLINE 1024
