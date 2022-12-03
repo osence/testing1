@@ -15,7 +15,7 @@ jobs:
       - run: make CTEST_OUTPUT_ON_FAILURE=1  test
 
       - name: Coveralls
-        run: coveralls -t ${{ secrets.coveralls_token }} --root . -E ".*external.*" -E ".*tests.*" -E ".*CMakeFiles.*"
+        run: coveralls -t "72GzgzNAg2hDlklwvaKmtysfhlMJ3IWL5" --root . -E ".*external.*" -E ".*tests.*" -E ".*CMakeFiles.*"
 
   sonarcloud-check:
     needs: gtest-tests
