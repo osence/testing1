@@ -43,16 +43,16 @@ TEST(TestCaseSorting, TestShaker) {
 	EXPECT_TRUE((a[0] == -5) && (a[1] == -2) && (a[2] == 0) && (a[3] == 1));
 }
 
-//Проверка сортировки Вставкой
-TEST(TestCaseSorting, TestInsertion) {
-
-	const int N = 4;
-	int* a = new int[N];
-	a[0] = -2; a[1] = -5; a[2] = 0; a[3] = 1;
-	insertion(a, 0, N - 1);
-	//EXPECT_EQ(1, 1);
-	EXPECT_TRUE((a[0] == -5) && (a[1] == -2) && (a[2] == 0) && (a[3] == 1));
-}
+////Проверка сортировки Вставкой
+//TEST(TestCaseSorting, TestInsertion) {
+//
+//	const int N = 4;
+//	int* a = new int[N];
+//	a[0] = -2; a[1] = -5; a[2] = 0; a[3] = 1;
+//	insertion(a, 0, N - 1);
+//	//EXPECT_EQ(1, 1);
+//	EXPECT_TRUE((a[0] == -5) && (a[1] == -2) && (a[2] == 0) && (a[3] == 1));
+//}
 
 //Проверка сортировки Пузырьком
 TEST(TestCaseSorting, TestBubble) {
@@ -77,7 +77,7 @@ TEST(TestCaseSorting, TestEqualsSortingResults) {
 		b[i] = a[i];
 	}
 	shellsort(a, 0, N - 1);
-	insertion(b, 0, N - 1);
+	bubble(b, 0, N - 1);
 
 	//EXPECT_EQ(1, 1);
 	for (int i = 0; i < N; i++)
