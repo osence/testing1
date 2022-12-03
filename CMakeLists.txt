@@ -11,7 +11,7 @@ add_subdirectory(src)
 
 if(NOT gtest_FOUND)
     message("Google test not installed, use it's source code from external folder!!!")
-    add_subdirectory(external/googletest)
+    add_subdirectory(externals/googletest)
 endif(NOT gtest_FOUND)
 
 add_subdirectory(tests)
